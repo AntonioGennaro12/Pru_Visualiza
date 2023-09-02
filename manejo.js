@@ -19,43 +19,43 @@ function miHandler () {
         switch (idx2) {
             case 0:
                 misFiguras[idx1].textContent = symbLib[idx1];
-                estado = "Fig1";        // OK MUESTRA FIG 1
+                estado = "Fig_muestraFig1->OK";        // OK MUESTRA FIG 1
                 break;
             case 1:
                 misCasillas[idx1].style.backgroundColor = "white";
-                estado = "backWhite";     // OK FONDO BLANCO
+                estado = "Casill_backWhite->OK";     // OK FONDO BLANCO
                 break;
             case 2:
                 misFiguras[idx1].textContent = "";
-                estado = "Fig=none";      // OK NO FIG1
+                estado = "Fig_BooraFig->OK";      // OK NO FIG1
                 break;
             case 3:
                 misCasillas[idx1].style.backgroundColor = "yellow";
-                estado = "CasBackYellow";  // OK FONDO AMARILLO 
+                estado = "CasillaBackYellow-> OK";  // OK FONDO AMARILLO 
                 break;
             case 4:   
                 misCasillas[idx1].textContent = symbLib[idx1+8];
-                estado = "CasFig+8";    // OK FIG +8 en Casilla 
+                estado = "CasillaMuestraFig+8->OK";    // OK FIG +8 en Casilla 
                 break;
             case 5:   
                 misCasillas[idx1].textContent = ""; 
-                estado = "CasFig=none";  // OK BORRA FIG+8 en CASILLA
+                estado = "CasillaBorraFig ->";  // OK BORRA FIG+8 en CASILLA
                 break;
             case 6:
                 misCasillas[idx1].style.backgroundColor = "transparent";
-                estado = "bacCasTransp";   // ERROR NO CHANGE
+                estado = "bacCasTransp->ERROR";   // ERROR NO CHANGE
                 break;
             case 7:
                 misFiguras[idx1].textContent = symbLib[idx1];
-                estado = "Fig1";          // ERROR NO CHANGE
+                estado = "Fig_MuestraFig1-> ERROR";          // ERROR NO CHANGE
                 break;
             case 8:
                 misFiguras[idx1].textContent = "";
-                estado = "BorraFig1";     // ERROR NO CHANGE
+                estado = "Fig_BorraFig1->ERROR";     // ERROR NO CHANGE
                 break;
             case 9:
                 misFiguras[idx1].textContent = symbLib[idx1+16];
-                estado = "Fig1+8";          // ERROR NO CHANGE
+                estado = "Fig_Muestra_Fig1+8->ERROR";          // ERROR NO CHANGE
                 break;
             case 10:
                 idx2 = 0
